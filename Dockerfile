@@ -17,11 +17,11 @@ RUN apt-get update -qy && \
     apt-get -qy clean
 
 # Download selenium and drivers.
-RUN wget -q https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip -O /chromedriver.zip && \
+RUN wget -q https://chromedriver.storage.googleapis.com/2.32/chromedriver_linux64.zip -O /chromedriver.zip && \
     unzip /chromedriver.zip && \
     chmod 0755 /chromedriver && \
     rm /chromedriver.zip && \
-    wget -q https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz -O /geckodriver.tar.gz && \
+    wget -q https://github.com/mozilla/geckodriver/releases/download/v0.19.0/geckodriver-v0.19.0-linux64.tar.gz -O /geckodriver.tar.gz && \
     tar xfvz /geckodriver.tar.gz && \
     chmod 0755 /geckodriver && \
     rm /geckodriver.tar.gz && \
