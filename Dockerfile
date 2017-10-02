@@ -25,7 +25,7 @@ RUN wget -q https://chromedriver.storage.googleapis.com/2.32/chromedriver_linux6
     tar xfvz /geckodriver.tar.gz && \
     chmod 0755 /geckodriver && \
     rm /geckodriver.tar.gz && \
-    wget -q http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar -O /selenium-server-standalone.jar
+    wget -q http://selenium-release.storage.googleapis.com/3.6/selenium-server-standalone-3.6.0.jar -O /selenium-server-standalone.jar
 
 EXPOSE 4444
 
